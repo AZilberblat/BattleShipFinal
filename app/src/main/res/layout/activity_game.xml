@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".gameActivity"
+android:orientation="vertical">
+
+
+
+
+<GridView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/opponent"
+    android:layout_gravity="center">
+</GridView>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Player Board"></TextView>
+
+
+
+
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player"
+        android:layout_gravity="center">
+    </GridView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        ></ProgressBar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"
+
+        android:text="Computer Thinking..."
+        android:textColor="@android:color/holo_purple" />
+
+
+
+
+</LinearLayout>

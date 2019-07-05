@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewside"
+        android:layout_alignEnd="@+id/showTopPlayers"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="0dp">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/showTopPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="265dp"
+        android:layout_marginBottom="70dp"
+        android:text="Show Table"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+
+    <Button
+        android:id="@+id/newGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="132dp"
+        android:text="New Game"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true">
+
+
+
+        <RadioButton
+            android:id="@+id/easyRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:text="Easy"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/normalRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:textColor="#FFFFFF"
+
+            android:text="Normal" />
+
+        <RadioButton
+            android:id="@+id/hardRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+
+            android:text="Hard" />
+    </RadioGroup>
+
+</RelativeLayout>

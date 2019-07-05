@@ -1,0 +1,49 @@
+
+    <GridLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/grid_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:layout_margin="80dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/lablel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Winner is:" />
+
+    <EditText
+        android:id="@+id/outcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        />
+
+
+
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Again"
+        android:layout_columnSpan="2"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/mainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:layout_columnSpan="2"
+        android:textAllCaps="false"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="8"
+            android:layout_column="0"
+            app:srcCompat="@drawable/firework" />
+
+    </GridLayout>
